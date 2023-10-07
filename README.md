@@ -14,5 +14,26 @@ Found Application.worksheetfunction.max(range("a:a")) here https://stackoverflow
 
 For looping through worksheets code, that was found here under option 2 here: https://support.microsoft.com/en-us/topic/macro-to-loop-through-all-worksheets-in-a-workbook-feef14e3-97cf-00e2-538b-5da40186e2b0
 
+    'Define WS as a variable'
+    Dim WS As Worksheet
 
-Also used this source for help with looping through worksheets and using Call https://stackoverflow.com/questions/21918166/excel-vba-for-each-worksheet-loop
+        'Cycle through the worksheets'
+         For Each WS In ActiveWorkbook.Worksheets
+    
+        'Use the macro below in each worksheet'
+        Call StockLoop(WS)
+        
+    Next
+    
+End Sub
+
+
+Also used this source for help with looping through worksheets and using Call and With functions https://stackoverflow.com/questions/21918166/excel-vba-for-each-worksheet-loop
+
+Sub StockLoop(WS As Worksheet)
+
+With WS
+
+Adding . before lines of code to reference the WS
+
+End With
