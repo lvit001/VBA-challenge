@@ -9,3 +9,6 @@ Found .NumberFormat = "0.00%" here https://stackoverflow.com/questions/42844778/
 
 
 Found Application.worksheetfunction.max(range("a:a")) here https://stackoverflow.com/questions/42633273/finding-max-of-a-column-in-vba
+
+
+For looping through worksheets code, that was found here under type 1: https://support.microsoft.com/en-us/topic/macro-to-loop-through-all-worksheets-in-a-workbook-feef14e3-97cf-00e2-538b-5da40186e2b0
